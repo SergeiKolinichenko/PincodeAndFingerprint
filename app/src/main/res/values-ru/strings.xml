@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">пинкод_и_отпечаток_пальца</string>
+
+    <string name="hello_world">Здравствуй Мир!</string>
+
+    <string name="pin_code_button_1">1</string>
+    <string name="pin_code_button_2">2</string>
+    <string name="pin_code_button_3">3</string>
+    <string name="pin_code_button_4">4</string>
+    <string name="pin_code_button_5">5</string>
+    <string name="pin_code_button_6">6</string>
+    <string name="pin_code_button_7">7</string>
+    <string name="pin_code_button_8">8</string>
+    <string name="pin_code_button_9">9</string>
+    <string name="pin_code_button_0">0</string>
+    <string name="pin_code_button_back">Вернуться</string>
+
+    <string name="pin_code_toast_many_similar_digits">Ошибка создания пин-кода\nвы набрали более двух одинаковых цифр</string>
+    <string name="pin_code_toast_saved_successfully">Пин-код успешно сохранён</string>
+
+    <string name="textview_pin_code_text">Введите цифровой код или воспользуйтесь сканером отпечатка пальцев для разблокировки</string>
+    <string name="pin_code_text_enter_new_pin">Необходимо ввести новый пин – код\n
+    Внимание, во введённом пин-коде не должно быть более двух одинаковых цифр</string>
+    <string name="complete">Выполнено</string>
+    <string name="finger_pint_failed_to_recognize">Не удалось распознать отпечаток пальца, попробуйте ещё раз</string>
+    <string name="pin_code_toast_wrong_pin_code">Введён некорректный пин-код, попробуйте ещё раз</string>
+    <string name="hello_blank_fragment">Тут всё начинается!\n:-)</string>
+</resources>

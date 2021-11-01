@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="myMarginFloatingActionButton">30dp</dimen>
+
+    <dimen name="widthPinCodeButton">50dp</dimen>
+    <dimen name="heightPinCodeButton">50dp</dimen>
+
+    <dimen name="textSizePinCodeButton">50sp</dimen>
+    <dimen name="textSizeBackPinCodeButton">16sp</dimen>
+    <dimen name="iconSizeBackPinCodeButton">40dp</dimen>
+    <dimen name="marginBottomPinCodeButton">2dp</dimen>
+    <dimen name="marginLeftPinCodeButton">5dp</dimen>
+    <dimen name="marginRightPinCodeButton">5dp</dimen>
+
+    <dimen name="marginLeftPinCodeLed">50dp</dimen>
+
+    <dimen name="marginBottomLinearlayoutPinCodeButtons">50dp</dimen>
+    <dimen name="marginBottomLinearlayoutPinCodeLed">50dp</dimen>
+
+    <dimen name="widthMessagePinCode">400dp</dimen>
+
+    <dimen name="textSizeMessagePinCode">19sp</dimen>
+    <dimen name="marginBottomMessagePinCode">50dp</dimen>
+
+    <dimen name="heightBottomSheetPinCode">580dp</dimen>
+    <dimen name="heightWidthBottomSheetImageView">150dp</dimen>
+</resources>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMessagePinCode"
+            android:layout_width="@dimen/widthMessagePinCode"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/textview_pin_code_text"
+            android:textAlignment="center"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="@dimen/textSizeMessagePinCode"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/marginBottomMessagePinCode"/>
+
+        <LinearLayout
+            android:id="@+id/llPinCodeLed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/marginBottomLinearlayoutPinCodeLed"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cvFirstDigit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/blank_circle_white_back"
+                app:civ_border_color="?attr/colorSecondary"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cvSecondDigit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/marginLeftPinCodeLed"
+                android:src="@drawable/blank_circle_white_back"
+                app:civ_border_color="?attr/colorSecondary"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cvThirdDigit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/marginLeftPinCodeLed"
+                android:src="@drawable/blank_circle_white_back"
+                app:civ_border_color="?attr/colorSecondary"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cvFourthDigit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/marginLeftPinCodeLed"
+                android:src="@drawable/blank_circle_white_back"
+                app:civ_border_color="?attr/colorSecondary"
+                app:civ_border_width="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPinCodeButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/marginBottomLinearlayoutPinCodeButtons"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/heightPinCodeButton"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_1"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_1"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_2"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_2"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_3"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_3"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/heightPinCodeButton"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_4"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_4"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_5"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_5"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_6"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_6"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/heightPinCodeButton"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_7"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_7"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_8"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_8"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_9"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_9"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/heightPinCodeButton"
+                android:layout_gravity="right"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ibFingerPrint"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/outline_fingerprint_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbDigit_0"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_0"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizePinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbPinCodeBack"
+                    android:layout_width="@dimen/widthPinCodeButton"
+                    android:layout_height="@dimen/heightPinCodeButton"
+                    android:layout_marginStart="@dimen/marginLeftPinCodeButton"
+                    android:layout_marginEnd="@dimen/marginRightPinCodeButton"
+                    android:layout_marginBottom="@dimen/marginBottomPinCodeButton"
+                    android:backgroundTint="?attr/colorOnSecondary"
+                    android:text="@string/pin_code_button_back"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:textSize="@dimen/textSizeBackPinCodeButton"
+                    app:cornerRadius="3dp"
+                    app:icon="@drawable/back_arrow_24"
+                    app:iconGravity="textTop"
+                    app:iconSize="@dimen/iconSizeBackPinCodeButton"
+                    app:iconTint="?attr/colorSecondaryVariant"
+                    app:strokeColor="?attr/colorSecondaryVariant"
+                    app:strokeWidth="0.5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llBottomSheetFingerPrint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="500dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/textViewFingerPrint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorOnSecondary"
+            android:gravity="center"
+            android:text="Приложите палец к сенсору отпечатков пальцев"
+            android:textAlignment="center"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/fFrameLayoutFingerPrint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightBottomSheetPinCode"
+            android:alpha="0.7"
+            android:background="?attr/colorOnSecondary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewFingerPrint"
+                android:layout_width="@dimen/heightWidthBottomSheetImageView"
+                android:layout_height="@dimen/heightWidthBottomSheetImageView"
+                android:background="?attr/colorOnSecondary"
+                android:tint="?attr/colorSecondary"
+                app:srcCompat="@drawable/outline_fingerprint_24"
+                tools:ignore="VectorDrawableCompat" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">pincode_and_fingerprint</string>
+
+    <string name="hello_world">Hello World!</string>
+
+    <string name="pin_code_button_1">1</string>
+    <string name="pin_code_button_2">2</string>
+    <string name="pin_code_button_3">3</string>
+    <string name="pin_code_button_4">4</string>
+    <string name="pin_code_button_5">5</string>
+    <string name="pin_code_button_6">6</string>
+    <string name="pin_code_button_7">7</string>
+    <string name="pin_code_button_8">8</string>
+    <string name="pin_code_button_9">9</string>
+    <string name="pin_code_button_0">0</string>
+    <string name="pin_code_button_back">Back</string>
+
+    <string name="pin_code_toast_many_similar_digits">Error generating pin code\nyou typed more than two identical digits</string>
+    <string name="pin_code_toast_saved_successfully">Pin saved successfully</string>
+
+    <string name="textview_pin_code_text">Enter numeric code or use the fingerprint reader to unlock</string>
+    <string name="pin_code_text_enter_new_pin">You need to enter a new pin code\n
+    Attention, the entered pin code should not contain more than two identical digits</string>
+    <string name="complete">Complete</string>
+    <string name = "finger_pint_failed_to_recognize">Failed to recognize fingerprint, please try again</string>
+    <string name = "pin_code_toast_wrong_pin_code">Wrong pin code entered, please try again</string>
+    <string name="hello_blank_fragment">This is where it all starts!\n:-) </string>
+</resources>
